@@ -2,25 +2,15 @@ import { Typography, Grid } from '@mui/material';
 
 function AppointmentConfirm({
   name,
-  setName,
   phoneNumber,
-  setPhoneNumber,
   documentType,
-  setDocumentType,
   documentNumber,
-  setDocumentNumber,
   township,
-  setTownship,
   email,
-  setEmail,
   eps,
-  setEps,
   appointmentType,
-  setAppointmentType,
   specializationType,
-  setSpecializationType,
   coosaludDiagnostic,
-  setCoosaludDiagnostic,
 }) {
   return (
     <>
@@ -44,7 +34,7 @@ function AppointmentConfirm({
           <Typography variant="h6" gutterBottom>
             Tipo de Cita
           </Typography>
-          <Grid container>
+          <Grid container sx={{ textAlign: 'left' }}>
             <Grid item xs={6}>
               <Typography gutterBottom>Eps:</Typography>
             </Grid>
